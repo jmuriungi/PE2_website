@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="width=device-width, initial-scale=1">
+    <title>Precious Elders 2 AFH | Services</title>
+    <link rel="stylesheet" href="pe2.css">
+  </head>
+  
+  <body>
+  <!--
+    <div id="pe2Sidenav" class="sidenav">
+      <p id="menu"><ins>Menu</ins></p>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="pe2.html">Home</a>
+      <a href="pe2_Services.html">Services</a>
+      <a href="#">Contact</a>
+      <a href="pe2_Testimonials.html">Testimonials</a>
+    </div>
+    <span id ="hamburgerMenu" onclick="openNav()">&#9776;</span>
+  -->
+
+    <div id="main" class="contentDiv">
+      <h1 id="Sheading1"><a id="serv_h1" href="pe2.html">Precious Elders 2 AFH</a></h1>
+      <hr>
+      <div class = "topnav" id="testimonialTopNav">
+        <a href="pe2.html">Home</a>
+        <a href="pe2_Services.html" class="active">Services</a>
+        <a href="pe2_Testimonials.html">Testimonials</a>
+        <a href="pe2_Contact.html">Contact</a>
+        <!--class="icon" used to open and close topnav on small screens-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <p>At Precious Elders 2 AFH we cherish our clients and provide 
+       services selflessly and with patience and kindness. We value the 
+       health, nutrition and hygiene of our clients and provide the 
+       following services while always respecting their wishes and 
+       treating them with diginty.</p>
+      <ul id=serv_list1>
+        <li>Healthy and nutritionous home cooked meals with the occasional
+        Kenyan dish.</li>
+        <li>Blood glucose monitoring for diabetic clients.</li>
+        <li>Hygiene care including baths, nail care, incontinence 
+        management, denture care and more.</li>
+        <li>Transportation to doctors appointments and other transport 
+        accomodations as needed.</li>
+        <li>Medication assistance.</li>
+      </ul>
+    </div>
+    <script>
+      /* set width of side navigation */
+      function openNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* set width of side navigation to 0*/
+      function closeNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+      /*Toggle btwn adding and removing responsive class to topnav when
+        user clicks on icon*/
+      function myFunction()
+      {
+        var x = document.getElementById("testimonialTopNav");
+        if (x.className === "topnav") 
+        {
+          x.className += " responsive";
+        }
+        else
+        {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+  
+</html>

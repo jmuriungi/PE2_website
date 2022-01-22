@@ -1,0 +1,566 @@
+body, html{
+    font-family: verdana;
+    font-size: 1.125rem;
+    transition: background-color .5s;
+    height: 100%;
+    background-color: #fad6a5;
+    margin: 0;
+}
+
+.contentDiv
+{
+  max-width:95%;
+  margin: 0 auto;
+}
+/* The side navigation menu
+.sidenav {
+    height: 100%;
+    /*100% full-height
+    width: 0;
+    /*0 width to be changed with JavaScrip
+    position: fixed;
+    /* Stay in place 
+    z-index: 1;
+    /* Stay on top 
+    top: 0;
+    /* Stay at the top 
+    left: 0;
+    background-color: #4d4336;
+    overflow-x: hidden;
+    /* disable horizontal scroll 
+    padding-top: 60px;
+    /* place content 60px from the top 
+    transition: 0.25s;
+    /* 0.25s transition effect to slide in the sidenav 
+}
+/* Navigaiton menu links 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ceac7d;
+    display: block;
+    transition: 0.2x;
+}
+/* color change upon mouse hover over links
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* position and style close button
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/* style page content if you want to push page content to right when opening side navigation
+#main {
+    transition: margin-left .25s;
+    padding: 0px;
+    margin-left: 0px;
+}
+/* where height <450px, change style of the sidenav (less padding and a smaller font size)
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+*/
+
+h1
+{    
+  font-size: 3.6rem;
+}
+
+img
+{
+  max-width: 100%;
+  display: block;
+}
+
+.webTitle
+{
+  margin-top: 0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.webTitleLink
+{
+  color: black;
+  text-decoration: none;
+}
+.webTitleLink visited
+{
+  color: black;
+  text-decoration: none;
+}
+
+/* HAMBURGER ICON STYLLING FOR SIDENAV
+span {
+    cursor: pointer;
+}
+#menu {
+    position: absolute;
+    top: 0;
+    padding: 0px 0px 0px 32px;
+    font-size: 25px;
+    color: #ceac7d;
+    display: block;
+    transition: 0.2s;
+}
+#hamburgerMenu {
+    font-size: 30px;
+}
+#insidePE2div1
+{
+  position: absolute;
+}
+#insidePE2div2
+{
+  width: 100%; /* This div takes up 100% of parent div's width
+}
+.insideHeader
+{
+  display: block;
+}
+*/
+
+/*Header styling*/
+#headerDiv
+{
+  width: inherit;
+  margin: 0 auto;
+}
+.header
+{
+	display: flex;
+  flex-direction: column;
+  justify-content: center; /* works vertically since flex-direction is column*/
+  align-items: center;
+}
+#titleHeaderDiv	{width: 100%}
+#logoPic		{width: 20%;}
+#subtitle{font-size: 1.125rem; margin-top: 0;}
+
+/*Home Slideshow Styling*/
+.slideshow-container
+{
+  max-width: 100%;
+  position: relative;
+}
+.mySlides 
+{
+  display: none;
+  width: 100%;
+  margin: 0 auto;
+}
+.responsivePic
+{
+  /*Center images*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* Make image responsive*/
+  max-width: 100%;
+  height: auto;
+}
+.portrait
+{
+  /*transform:rotate(90deg);*/
+  height: auto;
+  width: 600px;
+}
+.landscape
+{
+  height: 600px;
+  width: 1000px;
+}
+@media screen and (max-width: 680px)
+{
+  .landscape
+  {
+    height: auto;
+    width: auto;
+  }
+  .portrait
+  {
+    margin-top: 0;
+    height: auto;
+    width: auto;
+  }
+}
+
+/*
+* {box-sizing:border-box}
+/*Hide images by default*
+.mySlides
+{
+  display: none;
+}
+img {vertical-align: middle;}
+/*Slideshow container
+
+
+/*Next & previous buttons on home slideshow*
+.prev, .next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+/*Position 'next' button to the right*
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add black background color with a little see through*
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Overlay effect on top of container but bottom of image *
+.overlay
+{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Upon mouse over slideshow container on main page, fade in overlay title
+*
+.slideshow-container:hover .overlay
+{
+  opacity: 1;
+}
+
+/* Slideshow dots/bullets/indicators *
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, dot:hover
+{
+  background-color: #717171;
+}
+
+/* Fading animation *
+.fade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* Decrease text size on smaller screens *
+@media only screen and (max-width: 300px)
+{
+  .prev, .next {font-size: 11px}
+}
+*/
+
+/* Add black background color to Testimonials page topnav*/
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    width: inherit;
+    /*flex-direction: column;*/
+}
+/* Style links inside Testimonials page topnav*/
+.topnav a {
+    color: #f2f2f2;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+/* Change color of links on hover*/
+.topnav a:hover {
+    background-color: #b5dcf0;
+    color: black;
+}
+/* Add an active class to highlight current page*/
+.topnav a.currentPage {
+    background-color: #b5dcf0;
+    color: white;
+}
+/* Hide link that opens and closes topnav on small screens*/
+.topnav .icon {
+    display: none;
+}
+/* When screen is less than 600px wide, hide all links except for the first
+   show link containing should open and close topnav (.icon)*/
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float:right;
+      display: block;
+    }
+}
+/* "responsive" class is added to topnav with JS when user clicks on icon.
+   makes topnav look good on small screeens (links are displayed vertically
+   instead of horizontally*/
+@media screen and (max-width: 600px) {
+    .topnav.responsive 
+    {
+      width: 40%;
+      position: relative;
+      flex-direction: column;
+    }
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a
+    {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+/*Contact Page style*/
+#ContactUsh2
+{
+  text-align: center;
+}
+.contactInfoDiv
+{
+  font-size: 1.5rem;
+  width: 75%;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-evenly;
+  align-items: inherit;
+}
+.contactCol
+{
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: inherit;
+  justify-content: inherit;
+  margin: .5em;
+}
+#infoDiv
+{
+  background-color: antiquewhite;
+  border-radius: 1.2em;
+}
+.infoRow
+{
+  width: inherit;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.formCol
+{
+  background-color: bisque;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formItems
+{
+  padding: .5em;
+  margin: .5em;
+}
+.paragInfo
+{
+  margin: .5em;
+  text-align: center;
+}
+
+@media screen and (max-width: 680px)
+{
+  .contactInfoDiv
+  {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactCol
+  {
+    width: 100%;
+  }
+}
+
+/*Contact Email Feedback Modal Alert Box Styling*/
+.modalAlert
+{
+  display: none;  /* Hidden by default */
+  position: fixed;  /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 4em; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;  /* Full width */
+  height: 100%;  /* Full height */
+  overflow: auto;  /* Enable scroll if needed */
+  background-color: #61513d;
+}
+.modalAlertContent
+{
+  background-color: #e0ffff;
+  margin: auto;
+  padding: 2em;
+  border: .4em solid #888;
+  width: 80%;
+}
+.modalClose
+{
+  color: #aaaaaa;
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.modalClose: hover, .modalClose: focus
+{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*ABOUT US PAGE STYLING*/
+.aboutUs
+{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.divProvContent
+{
+  width: 50%;
+}
+.paragProvInfo
+{
+  text-align: justify;
+}
+.provPics
+{
+  margin: 0 auto;
+}
+/*Position image container so that I can position left and right arrows*/
+.provPhotosContainer
+{
+  position: relative;
+}
+/*Hide images by default*/
+.provPicsSlides
+{
+  display: none;
+}
+/*Add a pointer when hovering over thumbnail images*/
+.cursor
+{
+  cursor: pointer;
+}
+/*Style next and previous buttons*/
+.slidesPrev, .slidesNext
+{
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 1em;
+  margin-top: -3em;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0 .2em .2em 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/*Position next button to the right*/
+.slidesNext
+{
+  right: 0;
+  border-radius: .2em 0 0 .2em;
+}
+/*On hover, add background color with a little bit see-through*/
+.slidesPrev:hover, .slidesNext:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+/*Container for image text below Provider slideshow*/
+.captionContainer
+{
+  text-align: center;
+  background-color: #222;
+  padding: .1em 1em;
+  color: white;
+}
+.provPicsSlidesBottomRow:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Three columns of thumbnails side by side*/
+.provPicsSlidesBottomColumn{float: left; width: 15%;}
+/*Add transparency effect for AboutUs Provider Thumbnail images*/
+.demo{opacity: 0.6;}
+.active, .demo:hover{opacity: 1;}
+/*#provPic
+{
+  width: 50%;
+  height: 50%;
+}*/
+/*Style text inputs, select elements and textareas*
+input[type=text], select, textarea
+{
+  width: auto;
+  padding: 12px;
+  border: 1px solid #ccc;  /*gray borders*
+  border-radius: 4px;  /* rounded borders*
+  box-sizing: border-box; /* make sure padding and width stays in place
+  margin-top: 6px;  /*add top margin
+  margin-bottom: 16px;
+  resize: vertical;  /*allow user to vertically resize textarea
+}
+
+.container
+{
+  display: block;
+  border-radius: 5px;
+  background-color: #e6d3bb;
+  padding: 20px;
+}	Blocked out styling for contact page text boxes*/

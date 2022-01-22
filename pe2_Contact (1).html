@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Precious Elders 2 AFH | Contact Us</title>
+    <link rel="stylesheet" href="pe2.css">
+    <script defer src="/fontAwesome/js/all.js"></script>
+  </head>
+  
+  <body>
+    <div id="main" class="contentDiv">
+      <h1 id="heading1"><a id="home_h1" href="pe2.html">Precious Elders 2 AFH</a></h1>
+      <hr>
+      <div class = "topnav" id="testimonialTopNav">
+        <a href="pe2.html">Home</a>
+        <a href="pe2_Services.html">Services</a>
+        <a href="pe2_Testimonials.html">Testimonials</a>
+        <a href="pe2_Contact.html" class="active">Contact</a>
+        <!--class="icon" used to open and close topnav on small screens-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <div><h2 id="ContactUsh2">Contact Us</h2></div>
+      <div class="container">
+        <form action="/contact_page.php">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname" placeholder="Enter your first name here.">
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Enter your last name here.">
+          <label for="lname">email:</label>
+          <input type="text" id="contact_email" name="email">
+          <label for="feedback">Feedback</label>
+          <textarea id="feedback" name="feedback" placeholder="I'm writing to you because..."></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      <hr>
+      <i class="fas fa-phone-alt"></i>
+      <i class="far fa-envelope"></i>
+    </div>
+
+    <script>
+      /*Toggle btwn adding and removing responsive class to topnav when
+        user clicks on icon*/
+      function myFunction()
+      {
+        var x = document.getElementById("testimonialTopNav");
+        if (x.className === "topnav") 
+        {
+          x.className += " responsive";
+        }
+        else
+        {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>

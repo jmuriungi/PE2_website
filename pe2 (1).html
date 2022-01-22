@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Precious Elders 2 AFH</title>
+    <link rel="stylesheet" href="pe2.css">
+  </head>
+
+  <body>
+    <div id="main" class="contentDiv">
+      <div id="pe2Sidenav" class="sidenav">
+        <p id="menu"><ins>Menu</ins></p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="pe2.html">Home</a>
+        <a href="pe2_Services.html">Services</a>
+        <a href="pe2_Contact.html">Contact</a>
+        <a href="pe2_Testimonials.html">Testimonials</a>
+      </div>
+      <div id="PE2header">
+        <div id="insidePE2div1" class="insideHeader">
+          <span id ="hamburgerMenu" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="insidePE2div2" class="insideHeader">
+          <h1 id="heading1">
+          <a id="home_h1" href="pe2.html">Precious Elders 2 AFH</a>
+          </h1>
+        </div>
+      </div>
+      <hr>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+      <!-- Add a pause button (two of '&#10074;'), on click, change pause to play (&#9658;) button and vice versa
+        HTML symbol list: https://www.scrollseek.com/wd/html_symbols_complete.html
+        <div id="slideshowPausePlay" class="mySlides">
+          <span id="pauseButton" class="pauseButton" onclick="pauseSlideshow()">&#10074;&#10074;</span>
+        </div>-->
+        <div class="mySlides">
+          <img id="diningTablePic" src="pics\dining table.jpg" alt="Dining Table" class="landscape responsive">
+        </div>
+        <div class="mySlides">
+          <img id="hallwayPic" src="pics\hallway.jpg" alt="Hallway" class="portrait responsive">
+        </div>
+        <div class="mySlides ">
+          <img src="pics\living room.jpg" alt="Living Room" class="portrait responsive">
+        </div>
+        <!--
+        <button class="slideNavButton prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slideNavButton next" onclick="plusDivs(1)">&#10095;</button>
+        -->
+      </div>
+    </div>
+
+    <script>
+      /* set width of side navigation */
+      function openNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("hamburgerMenu").style.display = "none";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* set width of side navigation to 0*/
+      function closeNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("hamburgerMenu").style.display = "contents";
+        document.body.style.backgroundColor = "#fad6a5";
+      }
+      /*Automatic slideshow script*/
+      var slideIndex = 0;
+      carousel();
+      function carousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i=0; i<x.length; i++)
+        {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);  // Change image every 5s
+      }
+      /* Pause, play Slideshow*
+      function pauseSlideshow()
+      {
+        document.getElementById("pauseButton").style.display = "&#9658;";
+      }*/
+    </script>
+    
+  </body>
+</html>

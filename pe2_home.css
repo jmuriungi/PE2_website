@@ -1,0 +1,198 @@
+body, html{
+    font-family: verdana;
+    transition: background-color .5s;
+    height: 100%;
+    background-color: #fad6a5;
+}
+
+/* The side navigation menu*/
+.sidenav {
+    height: 100%;
+    /*100% full-height*/
+    width: 0;
+    /*0 width to be changed with JavaScript*/
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #4d4336;
+    overflow-x: hidden;
+    /* disable horizontal scroll */
+    padding-top: 60px;
+    /* place content 60px from the top */
+    transition: 0.25s;
+    /* 0.25s transition effect to slide in the sidenav */
+}
+
+/* Navigaiton menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ceac7d;
+    display: block;
+    transition: 0.2x;
+}
+
+/* color change upon mouse hover over links*/
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* position and style close button*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* style page content if you want to push page content to right when opening side navigation*/
+#main {
+    transition: margin-left .25s;
+    padding: 0px;
+    margin-left: 0px;
+}
+
+/* where height <450px, change style of the sidenav (less padding and a smaller font size)*/
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+h1 {
+    margin-right: 50px;
+    font-size: 50px;
+    text-align: center;
+}
+
+span {
+    cursor: pointer;
+}
+
+#menu {
+    position: absolute;
+    top: 0;
+    padding: 0px 0px 0px 32px;
+    font-size: 25px;
+    color: #ceac7d;
+    display: block;
+    transition: 0.2s;
+}
+
+#hamburgerMenu {
+    font-size: 30px;
+}
+
+#home_h1 {
+    color: black;
+    text-decoration: none;
+}
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container*/
+.slideshow-container
+{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+/* Next and previous buttons */
+.prev, .next
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+/*position 'next' button to the right*/
+.next
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/*On hover, add background color with a little see through*/
+.prev:hover, .next:hover
+{
+    background-color: rgba(0.0.0.0.8);
+}
+/* Make image responsive*/
+.responsive
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Overlay effect on top of container but bottom of image */
+.overlay
+{
+  position: absolute;
+  bottom: 0;
+  background: rgb(0,0,0);
+  background: rgba(0,0,0,0.5);
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+/* Upon mouse over slideshow container on main page, fade in overlay title
+*/
+.slideshow-container:hover .overlay
+{
+  opacity: 1;
+}
+/* Slideshow dots/bullets/indicators */
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, dot:hover
+{
+  background-color: #717171;
+}
+/* Fading animation*/
+.fade
+{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade
+{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@keyframes fade
+{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}

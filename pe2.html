@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Precious Elders 2 AFH</title>
+    <link rel="stylesheet" href="pe2.css">
+    <link href="Font Awesome\css\all.css" rel="stylesheet">
+    <script defer src="Font Awesome\js\all.js"></script>
+  </head>
+
+  <body>
+    <div id="mainContentDiv" class="contentDiv">
+      <div id="headerDiv" class="header">
+        <h1 class="webTitle" id="home_h1">
+          <a id="homeLink1" class="webTitleLink" href="pe2.html">Precious Elders 2 AFH</a>
+        </h1>
+        <img id="logoPic" src="pics\logo2.jpg" alt="PE2 Logo">
+        <p id="subtitle">Caring Hands</p>
+        <div class = "topnav" id="testimonialTopNav">
+          <a href="pe2.html" class="currentPage">Home</a>
+          <a href="pe2_Services.html">Services</a>
+          <!--<a href="pe2_Testimonials.html">Testimonials</a>-->
+          <a href="pe2_Contact.html">Contact</a>
+          <a href="aboutus.html" id="aboutLink">About</a>
+          <!--class="icon" used to open and close topnav on small screens-->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-caret-square-down"></i>
+          </a>
+        </div>
+      </div>
+      <!-- Slideshow container -->
+      <!-- Goal/objective -->
+      <div class="slideshow-container">
+      <!-- Add a pause button (two of '&#10074;'), on click, change pause to play (&#9658;) button and vice versa
+        HTML symbol list: https://www.scrollseek.com/wd/html_symbols_complete.html 
+        <div id="slideshowPausePlay" class="mySlides">
+          <span id="pauseButton" class="pauseButton" onclick="pauseSlideshow()">&#10074;&#10074;</span>
+        </div>-->
+        <div class="mySlides">
+          <img id="homeFrontPic" src="pics\home_front_pic.jpg" alt="Picture of
+            front of home" class="landscape responsivePic">
+        </div>
+        <div class="mySlides">
+          <img id="homeSidePic" src="pics\home_front_side.jpg" alt="Picture of
+            front of home" class="landscape responsivePic">
+        </div>
+        <div class="mySlides ">
+          <img src="pics\home_patio.jpg" alt="Picture of home patio" class="landscape responsivePic">
+        </div>
+        <div class="mySlides ">
+          <img src="pics\home_back_lawn.jpg" alt="Picture of home back lawn" class="landscape responsivePic">
+        </div>
+        <div class="mySlides ">
+          <img src="pics\home_side_entrance.jpg" alt="Picture of home side entrance" class="portrait responsivePic">
+        </div>
+        <!--
+        <button class="slideNavButton prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="slideNavButton next" onclick="plusDivs(1)">&#10095;</button>
+        -->
+      </div>
+    </div>
+
+    <script>
+      /* set width of side navigation 
+      function openNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("hamburgerMenu").style.display = "none";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+      /* set width of side navigation to 0
+      function closeNav()
+      {
+        document.getElementById("pe2Sidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("hamburgerMenu").style.display = "contents";
+        document.body.style.backgroundColor = "#fad6a5";
+      }*/
+      
+      /*Toggle btwn adding and removing responsive class to topnav when
+        user clicks on icon*/
+      function myFunction()
+      {
+        var x = document.getElementById("testimonialTopNav");
+        if (x.className === "topnav") 
+        {
+          x.className += " responsive";
+        }
+        else
+        {
+          x.className = "topnav";
+        }
+      }
+      
+      /*Automatic slideshow script*/
+      var slideIndex = 0;
+      carousel();
+      function carousel()
+      {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i=0; i<x.length; i++)
+        {
+          x[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 5000);  // Change image every 5s
+      }
+      /* Pause, play Slideshow*
+      function pauseSlideshow()
+      {
+        document.getElementById("pauseButton").style.display = "&#9658;";
+      }*/
+    </script>
+    
+  </body>
+</html>
